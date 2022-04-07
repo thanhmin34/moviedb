@@ -20,7 +20,10 @@ const Routing = () => {
       }
     >
       <Routes>
-        <Route path="/moviedb" element={<Home />}></Route>
+        <Route
+          path="https://thanhmin34.github.io/moviedb"
+          element={<Home />}
+        ></Route>
         <Route path="/movies" element={<Movies />}></Route>
         <Route path="/movie/:movieId" element={<Detail />}></Route>
         <Route path="/tv" element={<Tv />}></Route>
