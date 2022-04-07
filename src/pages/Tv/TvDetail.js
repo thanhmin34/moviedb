@@ -64,8 +64,8 @@ function Tv() {
         <div className="mt-6 pt-[56%] relative">
           <iframe
             className="absolute top-0 left-0 right-0 w-full h-full object-cover"
-            // src={`https://www.2embed.ru/embed/tmdb/tv?id=${id}&s=1&e=${espisodes}`}
-            src="https://www.youtube.com/embed/Kwg_J99qQUI"
+            src={`https://www.2embed.ru/embed/tmdb/tv?id=${id}&s=1&e=${espisodes}`}
+            // src="https://www.youtube.com/embed/Kwg_J99qQUI"
             // src={url}
             title="the movies"
             allowFullScreen
