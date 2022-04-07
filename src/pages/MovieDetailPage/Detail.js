@@ -42,7 +42,6 @@ function MovieVideo({ id }) {
         <iframe
           className="absolute top-0 left-0 right-0 w-full h-full object-cover"
           src={`https://www.2embed.ru/embed/imdb/movie?id=${id}`}
-          // src="https://www.youtube.com/embed/Kwg_J99qQUI"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
