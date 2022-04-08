@@ -31,7 +31,6 @@ function Tv() {
   // console.log(tvId);
   const [url, setUrl] = useState(
     `https://www.2embed.ru/embed/tmdb/tv?id=${tvId}&s=1&e=1`
-    // `https://www.youtube.com/embed/Kwg_J99qQUI`
   );
 
   const { data, error } = useSWR(
@@ -40,7 +39,6 @@ function Tv() {
   );
   const hanldeClick = (index) => {
     setUrl(`https://www.2embed.ru/embed/tmdb/tv?id=${tvId}&s=1&e=${index + 1}`);
-    // setUrl("https://www.youtube.com/embed/KPkqq_ht_eQ");
   };
   const loading = !data && !error;
   if (!data) return loading;
@@ -64,7 +62,7 @@ function Tv() {
         <div className="mt-6 pt-[56%] relative">
           <iframe
             className="absolute top-0 left-0 right-0 w-full h-full object-cover"
-            src={`https://www.2embed.ru/embed/tmdb/tv?id=${id}&s=1&e=${espisodes}`}
+            src={`https://www.2embed.ru/embed/tmdb/tv?id=${id}&s=1&e=1`}
             title="the movies"
             allowFullScreen
           ></iframe>

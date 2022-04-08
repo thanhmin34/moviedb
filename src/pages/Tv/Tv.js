@@ -36,8 +36,6 @@ const SerisfTv = () => {
   const { data, error } = useSWR(url, fetcher);
   const tvs = data?.results || [];
   useEffect(() => {
-    if (next < 1) setNext(1);
-    if (next > 8) setNext(8);
     if (filterDebounce) {
       setUrl(
         `https://api.themoviedb.org/3/search/tv?api_key=92f81e121c32d0b9ad19e4e7851187ca&query=${filterDebounce}&page=${next}`
