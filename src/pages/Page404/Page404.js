@@ -9,7 +9,7 @@ const Page404 = () => {
           Trang Không có trên Website
         </h2>
         <Link
-          to={"/"}
+          to={"/moviedb"}
           className="px-2 py-1 border border-primary rounded-lg cursor-pointer bg-primary"
         >
           Trang chủ

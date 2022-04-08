@@ -10,7 +10,10 @@ const HeaderMovie = () => {
 
   return (
     <div className="flex my-8 items-center justify-between cursor-pointer w-full">
-      <div onClick={() => navigate("/")} className={`flex mr-2 w-8 h-8 `}>
+      <div
+        onClick={() => navigate("/moviedb")}
+        className={`flex mr-2 w-8 h-8 `}
+      >
         <img
           className="w-full h-full object-cover"
           src="https://filmhot.live/icon.png"

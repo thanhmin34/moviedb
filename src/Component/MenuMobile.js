@@ -11,7 +11,7 @@ const MenuMobile = () => {
 
   return (
     <div
-      onClick={() => navigate("/")}
+      onClick={() => navigate("/moviedb")}
       className=" flex justify-between items-center text-4xl py-2 sm:hidden "
     >
       <div className="flex items-center justify-start">

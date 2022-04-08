@@ -31,7 +31,7 @@ const Search = () => {
     <div className="w-full max-w-[400px] mx-auto mt-6 h-screen px-4">
       <div
         className="flex justify-end text-xl font-bold cursor-pointer"
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/moviedb")}
       >
         X
       </div>

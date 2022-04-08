@@ -12,7 +12,7 @@ const list = [
     id: 1,
     icon: <FaHome />,
     title: "Home",
-    address: "/",
+    address: "/moviedb",
   },
   {
     id: 2,
@@ -58,7 +58,10 @@ const SideBarMenu = () => {
         showMenu === true ? "s:translate-x-[0]" : "s:translate-x-[-100%]"
       } transition-all duration-300`}
     >
-      <Logos title="FilmHay" />
+      <div className="flex items-center justify-between">
+        <Logos title="FilmHay" />
+        <span className="mr-8 cursor-pointer text-xl mt-2 sm:hidden ">X</span>
+      </div>
 
       <div className="Menu text-white mt-10 ml-2 xl:mt-0 s:mt-10 s:opacity-70">
         <h2 className="text-md xl:hidden s:block">MENU</h2>
